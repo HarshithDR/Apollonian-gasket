@@ -25,20 +25,26 @@
 # c2 = Circle(1/100, 100, 200)
 # c3 = Circle(1/100, 300, 200)
 
-# fig, ax = plt.subplots()
+# def initFigure():
+#     fig, ax = plt.subplots(figsize=(6, 6))
+#     ax.axis('off')
+#     ax.set_aspect('equal')
+#     ax.margins(0)
+#     ax.autoscale()
+    
+#     return fig, ax
 
-# circle1 = plt.Circle((c1.x, c1.y), c1.radius, fill=False)
-# circle2 = plt.Circle((c2.x, c2.y), c2.radius, fill=False)
-# circle3 = plt.Circle((c3.x, c3.y), c3.radius, fill=False)
+# def drawCircle(ax, C):
+#     circle = plt.Circle((C.x, C.y), C.radius, fill=False)
+#     ax.add_patch(circle)
 
-# ax.add_patch(circle1)
-# ax.add_patch(circle2)
-# ax.add_patch(circle3)
+# fig, ax = initFigure()
 
-# ax.set_aspect('equal')
-# ax.axis('off')
-# ax.margins(0)
-# ax.autoscale()
+# drawCircle(ax, c1)
+# drawCircle(ax, c2)
+# drawCircle(ax, c3)
+
 # plt.show()
+
 
 
