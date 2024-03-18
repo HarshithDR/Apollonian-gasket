@@ -16,13 +16,11 @@ if __name__ == "__main__":
     drawCircle(ax,c3)
 
     k4 = descartes(c1,c2,c3)
-    # r4 = abs(1/k4[0])
-    z4 = complexDescartes(c1,c2,c3,k4[0])
-    # print(z4[0].a)
-    c4 = CircleClass(k4[0], z4[0].a, z4[0].b)
+    allCircles = complexDescartes(c1,c2,c3,k4)
+
+    drawCircle(ax,allCircles[0])
+    drawCircle(ax,allCircles[1])
+    drawCircle(ax,allCircles[2])
+    drawCircle(ax,allCircles[3])
     
-    drawCircle(ax,c4)
-    
-    # c4 = CircleClass(k4[1], z4[0].a, z4[0].b)
-    # drawCircle(ax,c4)
     plt.show()
