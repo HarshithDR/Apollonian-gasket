@@ -15,8 +15,6 @@ if __name__ == "__main__":
     drawCircle(ax,c2)
     drawCircle(ax,c3)
 
-    
-
     k4 = descartes(c1,c2,c3)
     # r4 = abs(1/k4[0])
     z4 = complexDescartes(c1,c2,c3,k4[0])
