@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 from CircleClass import CircleClass
 from Plot import *
-
+from descartes import *
 
 if __name__ == "__main__":
     c1 = CircleClass((-1/200),200,200)
@@ -15,3 +15,7 @@ if __name__ == "__main__":
     drawCircle(ax,c3)
 
     plt.show()
+
+    k4 = descartes(c1,c2,c3)
+    r4 = abs(1/k4[1])
+    print(r4)
