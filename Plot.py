@@ -10,5 +10,5 @@ def initFigure():
     return ax, fig
 
 def drawCircle(ax,C):
-    circle = plt.Circle((C.x,C.y), C.radius,fill = False)
+    circle = plt.Circle((C.center.a,C.center.b), C.radius,fill = False)
     ax.add_patch(circle)

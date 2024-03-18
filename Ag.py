@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 from CircleClass import CircleClass
 from Plot import *
 from descartes import *
+from ComplexDescartes import *
 
 if __name__ == "__main__":
     c1 = CircleClass((-1/200),200,200)
@@ -14,8 +15,16 @@ if __name__ == "__main__":
     drawCircle(ax,c2)
     drawCircle(ax,c3)
 
-    plt.show()
+    
 
     k4 = descartes(c1,c2,c3)
-    r4 = abs(1/k4[1])
-    print(r4)
+    # r4 = abs(1/k4[0])
+    z4 = complexDescartes(c1,c2,c3,k4[0])
+    # print(z4[0].a)
+    c4 = CircleClass(k4[0], z4[0].a, z4[0].b)
+    
+    drawCircle(ax,c4)
+    
+    # c4 = CircleClass(k4[1], z4[0].a, z4[0].b)
+    # drawCircle(ax,c4)
+    plt.show()
